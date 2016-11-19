@@ -20,7 +20,7 @@ plot(strptime(paste(data1$Date,data1$Time),format='%d/%m/%Y%H:%M:%S'),as.numeric
 lines(strptime(paste(data1$Date,data1$Time),format='%d/%m/%Y%H:%M:%S'),as.numeric(data1$Sub_metering_1), col = 'black')
 lines(strptime(paste(data1$Date,data1$Time),format='%d/%m/%Y%H:%M:%S'),as.numeric(data1$Sub_metering_2), col = 'blue')
 lines(strptime(paste(data1$Date,data1$Time),format='%d/%m/%Y%H:%M:%S'),as.numeric(data1$Sub_metering_3), col='red')
-legend ("topright", col= C(black, red, blue), legend = c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
 
 plot(strptime(paste(data1$Date,data1$Time),format='%d/%m/%Y%H:%M:%S'),as.numeric(data1$Global_reactive_power), type = 'n',
      xlab='datetime',ylab='Global_reactive_power')
